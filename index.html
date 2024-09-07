@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Wesley Wild</title>
         <link rel="icon" type="image/jpg" href="">
     </head>
@@ -36,6 +38,68 @@
         <a href="mailto:wdw0510@gmail.com">
             email me
         </a>
+        <!--inline-->
+        <h1><span style="background-color: tomato;">This is a span title</span></h1>
+        <!--blockline-->
+        <h1><div style="background-color: tomato;">This is a div title</div></h1>
+        
+        <!--unorder list-->
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <ul>
+                <li>secondary</li>
+            </ul>
+        </ul>
+
+        <!--ordered list-->
+        <ol>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <ol>
+                <li>secondary</li>
+            </ol>
+        </ol>
+
+        <!--definition list-->
+        <dl style="background-color: bisque; border:2px solid;">
+            <dt>item 1</dt>
+            <dd>definition 1</dd>
+            <dt>item 2</dt>
+            <dd>definition 2</dd>
+        </dl>
+
+        <!--table-->
+        <table align="center" border="2" style="background-color: black;">
+            <tr style="background-color: aqua;">
+                <th width="100">header 1</th>
+                <th>header 2</th>
+            </tr>
+            <tr align="center" style="background-color: aquamarine;">
+                <td>data 1</td>
+                <td>data 2</td>
+            </tr>
+        </table>
+
+        <a href="/page2.html">
+            <button style="font-size: 25px; background-color: gray; color:lightblue; border-radius: 25px;">click me</button>
+        </a>
+
+        <button onclick="doSomething()" style="font-size: 25px; background-color: gray; color:lightblue; border-radius: 25px;">click me</button>
+
+        <p id="greeting">Hello</p>
+
+        <!--JS-->
+        <script>
+            function doSomething()
+            {
+                alert("you clicked me");
+                document.getElementById("greeting").innerHTML = "Goodbye";
+            }
+        </script>
+
     </body>
 </html>
 
