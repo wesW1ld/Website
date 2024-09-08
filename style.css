@@ -1,0 +1,16 @@
+body{
+    background-color: aquamarine;
+}
+h1{
+    color: rgb(120, 213, 241);
+}
+#p1{
+    color: hsl(283, 100%, 64%);
+}
+.one{
+    color: #59ff5f;
+}
+/*
+    # for id, . for class
+    put a color and an rgb slider appears(vscode)
+*/
